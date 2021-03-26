@@ -233,10 +233,10 @@ ul {
 }
 
 .promo__slider-controls:after {
-  content: '';
+  content: "";
   width: 2px;
   height: 32px;
-  background-color: #EAF2F6;
+  background-color: #eaf2f6;
   position: absolute;
   top: center;
   left: 105px;
@@ -295,8 +295,7 @@ ul {
 
 .button {
   margin: 0;
-  width: 204px;
-  height: 52px;
+  padding: 16px 32px;
   background-color: #06a9b3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,6 +322,12 @@ ul {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / 4;
+}
+
+.button__article-order {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5 / 8;
 }
 
 .social-list {
@@ -368,4 +373,85 @@ ul {
 
 .social-list__vkontakte {
   background: url("../img/vkontakte.svg") no-repeat center;
+}
+
+.article {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+  padding: 100px 0;
+}
+
+.article__title {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / 9;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 60px;
+  color: #06a9b3;
+}
+
+.article__subtitle {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / 9;
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.article__text {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / 9;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.article__text_aside_right {
+  grid-column: -2 / -4;
+  font-size: 14px;
+  line-height: 24px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.article__text_aside_left {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  font-size: 14px;
+  line-height: 24px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.article__img {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / 9;
+  margin-bottom: 24px;
+}
+
+.article__img_big {
+  grid-column: 2 / -2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.article__blockqoute {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-column: 4 / 10;
+  font-size: 22px;
+  margin: 8px 0 32px 0;
 }
